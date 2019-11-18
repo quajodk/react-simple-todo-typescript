@@ -8,9 +8,9 @@ import {ApolloProvider} from '@apollo/react-hooks';
 import './App.css';
 // import {Layout} from 'antd';
 
-import Home from './components/Home';
-import Todo from './components/Todo';
-import EditTodo from './components/EditTodo';
+import Home from './components/Home.component';
+import Todo from './components/Todo.component';
+import EditTodo from './components/EditTodo.component';
 
 const client = new ApolloClient({
   uri: 'https://plp0mopxq.sse.codesandbox.io'
