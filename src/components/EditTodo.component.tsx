@@ -5,7 +5,7 @@ import {useParams, useHistory} from 'react-router-dom';
 import {Input, Spin, Alert, Button} from 'antd/es';
 
 import {GET_TODO} from '../queries';
-import {UPDATE_TODO} from '../mutations';
+import {UPDATE_TODO} from '../mutation';
 
 const EditTodo: React.FC = () => {
   const {id} = useParams();
@@ -26,7 +26,6 @@ const EditTodo: React.FC = () => {
         enterButton='Update Todo'
         defaultValue={data.todo.type}
         onSearch={(value: any, e: any) => {
-          e.preventDefault;
           updateTodo({variables: {id: data.todo.id, type: value}});
           history.push('/');
         }}
@@ -35,7 +34,6 @@ const EditTodo: React.FC = () => {
       <Button
         type='primary'
         onClick={(e: any) => {
-          e.preventDefault;
           history.goBack();
         }}>
         Back

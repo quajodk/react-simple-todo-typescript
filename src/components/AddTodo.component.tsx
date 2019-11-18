@@ -4,7 +4,7 @@ import {useMutation} from '@apollo/react-hooks';
 import {Input} from 'antd/es';
 
 import {GET_TODOS} from '../queries';
-import {ADD_TODO} from '../mutations';
+import {ADD_TODO} from '../mutation';
 const AddTodo: React.FC = () => {
   const [inputValue, setInputValue] = React.useState('');
 
