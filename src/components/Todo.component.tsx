@@ -31,14 +31,16 @@ const Todo: React.FC = () => {
     return (
       <React.Fragment>
         <Alert message={error.message} type='error' />
-        <br />
-        <Button
-          type='primary'
-          onClick={(e: any) => {
-            history.goBack();
-          }}>
-          Back
-        </Button>
+
+        <div>
+          <Button
+            type='primary'
+            onClick={(e: any) => {
+              history.goBack();
+            }}>
+            Back
+          </Button>
+        </div>
       </React.Fragment>
     );
   return (

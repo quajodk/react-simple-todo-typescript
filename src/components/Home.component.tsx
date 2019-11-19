@@ -5,8 +5,8 @@ import Todos from './Todos.component';
 const Home: React.FC = () => {
   return (
     <React.Fragment>
-      <AddTodo />
       <Todos />
+      <AddTodo />
     </React.Fragment>
   );
 };
