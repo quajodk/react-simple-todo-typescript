@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Running the project locally
+1. Clone the repository by running git clone https://github.com/quajodk/react-simple-todo-typescript
+2. Navigate into project folder cd react-simple-todo-typescript
+3. Install dependencies yarn install
+4. Serve the project yarn start
+5. Open your browser to view  http://localhost:3000.
 
 ## Available Scripts
 
